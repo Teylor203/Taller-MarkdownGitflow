@@ -61,23 +61,35 @@ Registro de turoria exitoso.
 #### Resultado esperado
 
 
-### RF-03 - [Nombre del requerimiento]
+### RF-03 - Inscripción a una tutoría
 
 #### Resumen
+
+Permite que un estudiante se inscriba a una tutoría disponible, siempre y cuando cumpla con las condiciones necesarias para hacerlo.
 
 #### Entradas
 
 | Entrada | Tipo de dato | Descripción |
 |---|---|---|
+| codigoEstudiante | String | Código que identifica al estudiante que solicita la inscripción |
+| idTutoria | Integer | Identificador único de la tutoría a la que desea inscribirse |
 
 #### Reglas o condiciones
+
+- El estudiante debe encontrarse activo en la Universidad.
+- La tutoría indicada debe existir.
+- La tutoría debe tener al menos un cupo disponible.
+- El estudiante no debe encontrarse previamente inscrito en esa tutoría.
 
 #### Salidas
 
 | Salida | Tipo de dato | Descripción |
 |---|---|---|
+| mensajeConfirmacion | String | Mensaje que informa si la inscripción fue exitosa o no, indicando el motivo en caso de fallo |
 
 #### Resultado esperado
+
+Si se cumplen todas las condiciones, el sistema registra la inscripción del estudiante en la tutoría y disminuye en uno la cantidad de cupos disponibles. Si alguna condición no se cumple, la inscripción no se realiza y el sistema informa el motivo.
 
 
 ### RF-04 - Cancelación Inscripción
