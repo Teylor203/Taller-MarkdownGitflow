@@ -42,42 +42,23 @@ Identificador: String
 Registro de turoria exitoso.
 
 
-### RF-02 - Consulta de la monitorias
+### RF-02 - [Nombre del requerimiento]
 
 #### Resumen
-Los estudiantes buscaran a la tutoria a la que desean inscribirse, esta será buscada con la fecha y de manera opcional indicar la asignatura o tema de interés. 
 
 #### Entradas
 
-| Entrada  | Tipo de dato | Descripción |
+| Entrada | Tipo de dato | Descripción |
 |---|---|---|
-| Fecha_Buscada | DateTime | Fecha de la tutoria buscada |
-| Asignatura | String | Nombre de la asigntura |
-| Tema | String | Nombre del tema |
-| Id_Tutoria | int | Identificador unitario |
-| Fecha_Tutoria | DateTime | Fecha de la tutoria asignada por el docente |
-| Cupos_Disponibles | Int | Muestra cupos restantes |
-| Mensaje_Fallido | String | Mensaje de no haber encontrado la tutoria |
 
 #### Reglas o condiciones
-- Condición 1: Buscar por fecha la monitoria o si es deseado con el nombre de la asigntura.
-- Condición 2: No mostrar las tutorías que se encuentran llenas.
-- Condición 3: El sistema debe mostrar el ID unitario de cada tutoria en la búsqueda.
-- Condición 4: Mostrar mensaje de error al no encontrar la tutoria.
 
 #### Salidas
 
 | Salida | Tipo de dato | Descripción |
 |---|---|---|
-| asignatura | String | Nombre de la asigantura |
-| id_Tutoria | int | Identificador unico de la tutoria|
-| mensaje_Fallido | String | mensaje descriptivo de error |
 
 #### Resultado esperado
-
-El estudiante que desee buscar alguna tutoria por su ID o fecha en la que lo necesite
-aparecera un listado de todas las tutorias disponibles. En caso de no encontrar ninguna
-resivira en la misma pagina un mensaje de error.
 
 
 ### RF-03 - [Nombre del requerimiento]
